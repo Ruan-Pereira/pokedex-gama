@@ -1,16 +1,30 @@
 // import './App.scss';
 import React, { useEffect, useContext } from 'react';
+import Swal from 'sweetalert2';
+
 import { StoreContext } from '../../StoreContext';
 import './index.scss';
 
 function Minicart(pokemon) {
   const datas = useContext(StoreContext);
-  const { openCart, setOpenCart, items, updateCart, valueMinicart } = datas;
+  const { openCart, setOpenCart, items, updateCart, valueMinicart, setItems } =
+    datas;
 
   useEffect(() => {
     const init = async () => {};
     init();
   }, [items]);
+
+  function finishPurchase() {
+    if (items.length) {
+      Swal.fire('Thank you for shopping with us');
+      localStorage.removeItem('minicart');
+      setOpenCart(false);
+      setItems([]);
+    } else {
+      Swal.fire('You need to add a pokemon');
+    }
+  }
 
   return (
     items && (
@@ -76,7 +90,9 @@ function Minicart(pokemon) {
             </strong>
           </div>
           <div className="minicart__buy__button">
-            <button className="buy__button">Finalizar Compra</button>
+            <button className="buy__button" onClick={() => finishPurchase()}>
+              Purchase completed
+            </button>
           </div>
         </div>
       </>

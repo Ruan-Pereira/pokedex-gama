@@ -1,4 +1,3 @@
-// import './App.scss';
 import React, { useContext, useEffect, useState } from 'react';
 import { StoreContext } from '../../StoreContext';
 import { useParams } from 'react-router-dom';
@@ -56,7 +55,7 @@ function Product() {
                 <div className="measurements__weight">
                   <div className="measurements__header">
                     <img src={iconWeight} alt={response.species.name} />
-                    {`${response.weight} `} kg
+                    {`${response.weight / 10} `} kg
                   </div>
                   <p>weight</p>
                 </div>
@@ -64,7 +63,7 @@ function Product() {
                 <div className="measurements__height">
                   <div className="measurements__header">
                     <img src={iconHeight} alt={response.species.name} />
-                    {`${response.height} `} cm
+                    {`${response.height * 10} `} cm
                   </div>
                   <p>height</p>
                 </div>

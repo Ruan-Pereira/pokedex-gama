@@ -78,6 +78,7 @@ export const Storage = ({ children }) => {
         addToCart,
         updateCart,
         setSearch,
+        setItems,
       }}
     >
       {children}

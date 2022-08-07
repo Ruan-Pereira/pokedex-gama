@@ -1,4 +1,3 @@
-// import './App.scss';
 import React, { useEffect, useContext, useState } from 'react';
 import { StoreContext } from '../../StoreContext';
 import useFetch from '../../hooks/useFetch';
