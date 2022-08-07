@@ -1,0 +1,35 @@
+$types: (
+"normal": #9B9BA3,
+"fighting": #E80011,
+"flying": #9FB9EB,
+"poison": #C645E1,
+"ground": #D4AD30,
+"rock": #D4AD30,
+"bug": #C645E1,
+"ghos": #7272D2,
+"steel": #5AA7AA,
+"fire": #FF8713,
+"water": #68B5E5,
+"grass": #34C677,
+"electric": #FFC700,
+"psychic": #FE7571,
+"ice": #77D3C3,
+"dragon": #0A6DCA,
+"dark": #5D5F6A,
+"fairy": #F29FE5,
+"unknown": #5D5F6A,
+"shadow": #5D5F6A);
+
+@each $name, $color in $types {
+  .bg--#{$name}{
+    background-color: $color;
+
+    &:hover{
+      background-color: $color;
+    }
+  }
+
+  .color--#{$name}{
+    color: $color;
+  }
+}

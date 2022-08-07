@@ -1,0 +1,34 @@
+.button__seeMore{
+  margin: 0 auto 16px;
+  display: block;
+  color: #fff;
+}
+
+.icon__type{
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  width: 100%;
+  border: 1px solid #19f;
+  gap: 16px;
+  color: #000;
+  padding-left: 8px;
+
+  img{
+    width: 22px;
+    height: auto;
+  }
+
+  span{
+    font-size: 12px;
+    display: block;
+  }
+
+  &:hover,&:focus{
+    background: #19f;
+    color: #fff;
+  }
+}

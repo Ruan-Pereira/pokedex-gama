@@ -1,0 +1,130 @@
+.product{
+  .content__product .container{
+    position: relative;
+
+    .content__product__header{
+      padding: 16px;
+    }  
+
+    .content__name{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 16px;
+      gap: 16px;
+      color: #fff;
+     
+      text-transform: capitalize;
+      a{
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+
+    .content__img__product{
+      background-image: linear-gradient(to bottom, transparent 0, transparent 70%, #fff 30%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .content__img{
+        width: 60%;
+        // margin-top: -30px;
+        img{
+          max-width: max-content;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+        }
+      }
+    }
+
+    .content__bg{
+      position: absolute;
+      top: 12px;
+      right: 10px;
+      img{
+        // object-fit: cover;
+        height: 220px;
+        width: 100%;
+        max-width: max-content;
+        display: block;
+      }
+    }
+
+    .content__info{
+        display: flex;
+        background-color: #fff;
+        border-radius: 5px;
+        flex-direction: column;
+
+        .lists__types{
+          list-style: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          padding: 0;
+
+          li{
+            max-width: max-content;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 8px;
+          }
+        }
+
+        .content__info__specifications{
+          display: flex;
+          gap: 8px;
+          width: 80%;
+          margin: auto;
+          max-width: 300px;
+
+          > div {
+            padding: 8px;
+            width: 30%;
+            text-align: center;
+            height: max-content;
+            margin: auto;
+          }
+
+          span{
+            display: block;
+            width: 3px;
+            background-color: #ccc;
+            margin: 8px 0;
+          }
+
+          .measurements__header{
+            display: flex;
+            font-family: Poppins;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            align-items: center;
+            img{
+              width: 24px;
+              height: auto;
+              transform:rotate(40deg)
+            }
+          }
+
+          p,strong{
+            font-size: 12px;
+            line-height: 24px;
+            margin: 0;
+            display: block;
+          }
+        }
+    }
+    
+    .product__title {
+      text-align: center;
+    }
+
+    .barChat{
+      pointer-events: none;
+    }
+  }
+}

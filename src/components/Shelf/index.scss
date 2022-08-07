@@ -1,0 +1,89 @@
+header {
+  margin-bottom: 16px;
+  .header-content {
+    display: flex;
+    align-items: center;
+    .header-content-logo {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      gap: 8px;
+      img {
+        width: 24px;
+        height: 32px;
+      }
+    }
+    .icon-search {
+      background-color: transparent;
+      width: 32px;
+      height: 32px;
+      padding: 0;
+      img {
+        width: 24px;
+        height: 32px;
+      }
+    }
+  }
+  .header-search {
+    input {
+      max-height: 0;
+      padding: 0;
+      border: 0;
+      transition: all 0.25s ease-in;
+    }
+    &.active input {
+      max-height: 300px;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      margin-top: 8px;
+    }
+  }
+}
+
+.shelf__pokemons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 16px;
+
+  li{
+    max-width: 200px;
+    width: 100%;
+    list-style: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+
+    a{
+      padding: 8px;   
+      text-decoration: none;
+
+      .shelf__img img{
+          margin: auto;
+          display: block;
+          max-width: max-content;
+      }
+  
+      h4,p{
+        margin:16px 0;
+        text-transform: capitalize;
+        color: #000;
+      }
+    }
+
+    .content__addToCard button{
+      color: #fff;
+      border-radius: 5px;
+      width: 100%;
+
+      &:hover{
+        border: none;
+        box-shadow:none;
+        opacity: 0.8
+      }
+    }
+  }
+}
